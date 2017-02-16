@@ -7,30 +7,40 @@
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/3cols.css">
+  <link rel="stylesheet" href="styles/col.css">
+  
 
   <!-- replace with your personal Font Awesome CDN link -->
   <script src="https://use.fontawesome.com/???.js"></script>
-  <script src="js/script.js"></script>
+ <!-- <script src="js/script.js"></script>-->
+  <script src="form-handler.js"></script>
+  
 </head>
 
 <body>
   <header>
+    
     <nav>
       <ul>
         <li><a href="#">Hats</a></li>
         <li><a href="#">Gloves</a></li>
         <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
+        <!--<li class="cart-info">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
+        </li>-->
       </ul>
     </nav>
+    <div class="image_container"><img class="wood" src="images/woodfloorlong.jpg" alt="Winter Wear logo">
+      <img src="images/wood-floor-4%20copy.jpg" class="logo" alt="Winter Wear logo">
+      <!--<img class="top_image" src="\images\tumblr_inline_nheed0pKsv1s6lw3t.png" alt="top of page picture">-->
+    <img class="wood" src="images/woodfloorlong.jpg" alt="Winter Wear logo"></div>
 
     <h1>Winter Wear Warehouse</h1>
   </header>
 
   <aside>
-    <form>
+    <form name="filter" onsubmit="capture();">
       <label>Filter By:
         <select name="filter">
           <option value="">Choose One</option>
@@ -40,20 +50,52 @@
       </label>
 
       <input type="submit" value="Sort">
-    </form>
+    </form>-->
   </aside>
 
   <section>
     <h2>Scarves</h2>
 
-    <div class="item-container">
+    <div class="item-container col span_1_of_3">
       <div class="item">
         <h2>Cable knit Scarf</h2>
       <img src="images/woolCableknit.jpeg" alt="scarf">  <!-- code template for a single item will go here -->
       </div>
     </div>
+     <div class="item-container col span_2_of_3">
+    </div>
+    <div class="item-container col span_3_of_3">
+    </div>
+    <!--test row 2-->
+    
   </section>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <section>
+    <div class="item-container col span_1_of_3">
+      <div class="item">
+        <h2>Cable knit Scarf</h2>
+      <img src="images/woolCableknit.jpeg" alt="scarf">  <!-- code template for a single item will go here -->
+      </div>
+    </div>
+     <div class="item-container col span_2_of_3">
+    </div>
+    <div class="item-container col span_3_of_3">
+    </div>
+  </section>
+  
+  <section>
+    <div class="item-container col span_1_of_3">
+      <div class="item">
+        <h2>Cable knit Scarf</h2>
+      <img src="images/woolCableknit.jpeg" alt="scarf">  <!-- code template for a single item will go here -->
+      </div>
+    </div>
+     <div class="item-container col span_2_of_3">
+    </div>
+    <div class="item-container col span_3_of_3">
+    </div>
+  </section>
+   <script type="text/javascript" src="form-handler.js"></script>
+  <!--<script type="text/javascript" src="js/script.js"></script>-->
 </body>
 </html>
