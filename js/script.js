@@ -52,3 +52,9 @@ var products = [
 for (var i in products) {
   console.log(products[i]);
 }
+
+function capture(){
+ console.log("hello")
+ console.log(document.filter.Sort.value);
+ event.preventDefault();
+}
