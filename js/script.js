@@ -1,3 +1,8 @@
+function capture(){
+ console.log(document.filterform.filter.value);
+ event.preventDefault();
+}
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -49,12 +54,25 @@ var products = [
   }
 ]
 
-for (var i in products) {
-  console.log(products[i]);
+for (var i=0; i<products.length; i++) {
+  console.log(products[i].name);
+  console.log(products[i].description);
+  console.log(products[i].price);
 }
 
-function capture(){
- console.log("hello")
- console.log(document.filter.Sort.value);
- event.preventDefault();
+function AddPrices(cartProducts) {
+  var total = 0;
+  
+	for(var i=0; i<cartProducts.length; i++) {
+      total = total + cartProducts[i].price;
+	}
+ 
+  /*print total as html to site next to cart icon while user is shopping*/
+  console.log(total);
 }
+
+function sort(){
+  console.log(document.sortForm.filter.value);
+  event.preventDefault();
+}
+

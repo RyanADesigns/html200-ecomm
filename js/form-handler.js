@@ -1,5 +1,3 @@
-function capture(){
- console.log("hello")
- console.log(document.filter.Sort.value);
- event.preventDefault();
+function reverseString(string_2){
+  string_2 = string_2 
 }
